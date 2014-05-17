@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, AVAudioPlayerDelegate>
+{
+    
+    AVAudioPlayer *audioPlayer1;
+    
+}
+
+-(IBAction)MuteButton:(id)sender;
+-(IBAction)UnMuteButton:(id)sender;
 
 @property (strong, nonatomic) UIWindow *window;
 

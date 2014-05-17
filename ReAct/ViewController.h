@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController : UIViewController
+{
+    
+    SystemSoundID PlaySoundID;
+    SystemSoundID PlaySoundBackID;
+    
+    
+}
+
+-(IBAction)PlayAudioButtonForward:(id)sender;
+-(IBAction)PlayAudioButtonBack:(id)sender;
+
+
 
 @end

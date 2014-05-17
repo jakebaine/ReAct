@@ -14,8 +14,29 @@
 
 @implementation ViewController
 
+-(IBAction)PlayAudioButtonForward:(id)sender{
+    
+    AudioServicesPlaySystemSound(PlaySoundID);
+    
+}
+
+-(IBAction)PlayAudioButtonBack:(id)sender{
+    
+    AudioServicesPlaySystemSound(PlaySoundBackID);
+}
+
+
+
 - (void)viewDidLoad
 {
+NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"trueclick" ofType:@".wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURL, &PlaySoundID);
+
+NSURL *SoundURLBack = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"falseclick" ofType:@".wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURLBack, &PlaySoundBackID);
+    
+
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

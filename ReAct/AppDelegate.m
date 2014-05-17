@@ -12,9 +12,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSString *music = [[NSBundle mainBundle] pathForResource:@"reactmenutrack" ofType:@".wav"];
+        audioPlayer1 = [[AVAudioPlayer alloc]
+                        initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
+    audioPlayer1.delegate = self;
+    audioPlayer1.numberOfLoops = -1;
+    [audioPlayer1 play];
     return YES;
 }
+
+-(IBAction)MuteButton:(id)sender
+
+{
+    NSString *music = [[NSBundle mainBundle] pathForResource:@"reactmenutrack" ofType:@".wav"];
+    audioPlayer1 = [[AVAudioPlayer alloc]
+                    initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
+    audioPlayer1.delegate = self;
+    [audioPlayer1 stop];
+
+}
+
+-(IBAction)UnMuteButton:(id)sender
+
+
+{
+    NSString *music = [[NSBundle mainBundle] pathForResource:@"reactmenutrack" ofType:@".wav"];
+    audioPlayer1 = [[AVAudioPlayer alloc]
+                    initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
+    audioPlayer1.delegate = self;
+    [audioPlayer1 play];
+    
+}
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -42,5 +72,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

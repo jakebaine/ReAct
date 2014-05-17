@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23E9E6D21921A019005EB146 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9E6D11921A019005EB146 /* AudioToolbox.framework */; };
+		23E9E6DA1921A0AF005EB146 /* clueclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D31921A0AF005EB146 /* clueclick.wav */; };
+		23E9E6DB1921A0AF005EB146 /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D41921A0AF005EB146 /* fail.wav */; };
+		23E9E6DC1921A0AF005EB146 /* falseclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D51921A0AF005EB146 /* falseclick.wav */; };
+		23E9E6DD1921A0AF005EB146 /* passsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D61921A0AF005EB146 /* passsound.wav */; };
+		23E9E6DE1921A0AF005EB146 /* reactmenutrack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D71921A0AF005EB146 /* reactmenutrack.wav */; };
+		23E9E6DF1921A0AF005EB146 /* timetap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D81921A0AF005EB146 /* timetap.wav */; };
+		23E9E6E01921A0AF005EB146 /* trueclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E9E6D91921A0AF005EB146 /* trueclick.wav */; };
+		23E9E6E21921C240005EB146 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9E6E11921C240005EB146 /* AVFoundation.framework */; };
 		23F2629E19201CE300537CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F2629D19201CE300537CF2 /* Foundation.framework */; };
 		23F262A019201CE300537CF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F2629F19201CE300537CF2 /* CoreGraphics.framework */; };
 		23F262A219201CE300537CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F262A119201CE300537CF2 /* UIKit.framework */; };
@@ -34,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23E9E6D11921A019005EB146 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		23E9E6D31921A0AF005EB146 /* clueclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clueclick.wav; sourceTree = "<group>"; };
+		23E9E6D41921A0AF005EB146 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		23E9E6D51921A0AF005EB146 /* falseclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falseclick.wav; sourceTree = "<group>"; };
+		23E9E6D61921A0AF005EB146 /* passsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passsound.wav; sourceTree = "<group>"; };
+		23E9E6D71921A0AF005EB146 /* reactmenutrack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reactmenutrack.wav; sourceTree = "<group>"; };
+		23E9E6D81921A0AF005EB146 /* timetap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timetap.wav; sourceTree = "<group>"; };
+		23E9E6D91921A0AF005EB146 /* trueclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = trueclick.wav; sourceTree = "<group>"; };
+		23E9E6E11921C240005EB146 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23F2629A19201CE300537CF2 /* ReAct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReAct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F2629D19201CE300537CF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23F2629F19201CE300537CF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E9E6E21921C240005EB146 /* AVFoundation.framework in Frameworks */,
+				23E9E6D21921A019005EB146 /* AudioToolbox.framework in Frameworks */,
 				23F262A019201CE300537CF2 /* CoreGraphics.framework in Frameworks */,
 				23F262A219201CE300537CF2 /* UIKit.framework in Frameworks */,
 				23F2629E19201CE300537CF2 /* Foundation.framework in Frameworks */,
@@ -101,6 +121,8 @@
 		23F2629C19201CE300537CF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23E9E6E11921C240005EB146 /* AVFoundation.framework */,
+				23E9E6D11921A019005EB146 /* AudioToolbox.framework */,
 				23F2629D19201CE300537CF2 /* Foundation.framework */,
 				23F2629F19201CE300537CF2 /* CoreGraphics.framework */,
 				23F262A119201CE300537CF2 /* UIKit.framework */,
@@ -126,6 +148,13 @@
 		23F262A419201CE300537CF2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23E9E6D31921A0AF005EB146 /* clueclick.wav */,
+				23E9E6D41921A0AF005EB146 /* fail.wav */,
+				23E9E6D51921A0AF005EB146 /* falseclick.wav */,
+				23E9E6D61921A0AF005EB146 /* passsound.wav */,
+				23E9E6D71921A0AF005EB146 /* reactmenutrack.wav */,
+				23E9E6D81921A0AF005EB146 /* timetap.wav */,
+				23E9E6D91921A0AF005EB146 /* trueclick.wav */,
 				23F262A519201CE300537CF2 /* ReAct-Info.plist */,
 				23F262A619201CE300537CF2 /* InfoPlist.strings */,
 				23F262A919201CE300537CF2 /* main.m */,
@@ -199,6 +228,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jake Baine";
 				TargetAttributes = {
+					23F2629919201CE300537CF2 = {
+						DevelopmentTeam = Z9QET2C23T;
+					};
 					23F262BA19201CE300537CF2 = {
 						TestTargetID = 23F2629919201CE300537CF2;
 					};
@@ -228,9 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E9E6DB1921A0AF005EB146 /* fail.wav in Resources */,
+				23E9E6E01921A0AF005EB146 /* trueclick.wav in Resources */,
+				23E9E6DA1921A0AF005EB146 /* clueclick.wav in Resources */,
 				23F262B619201CE300537CF2 /* Images.xcassets in Resources */,
+				23E9E6DC1921A0AF005EB146 /* falseclick.wav in Resources */,
+				23E9E6DD1921A0AF005EB146 /* passsound.wav in Resources */,
 				23F262A819201CE300537CF2 /* InfoPlist.strings in Resources */,
+				23E9E6DF1921A0AF005EB146 /* timetap.wav in Resources */,
 				23F262B119201CE300537CF2 /* Main.storyboard in Resources */,
+				23E9E6DE1921A0AF005EB146 /* reactmenutrack.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReAct/ReAct-Prefix.pch";
 				INFOPLIST_FILE = "ReAct/ReAct-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +431,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReAct/ReAct-Prefix.pch";
 				INFOPLIST_FILE = "ReAct/ReAct-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +501,7 @@
 				23F262CE19201CE300537CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23F262CF19201CE300537CF2 /* Build configuration list for PBXNativeTarget "ReActTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +510,7 @@
 				23F262D119201CE300537CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
